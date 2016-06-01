@@ -31,3 +31,12 @@
     
     #remove commit history
     remove-commit = "!f() { git rebase -p --onto HEAD~$1 HEAD; }; f"
+    
+    #track file
+    track-file = "!f() { git update-index --no-assume-unchanged $1; }; f"
+
+    #ignore file
+    ignore-file = "!f() { git update-index --assume-unchanged $1; }; f"
+
+    #currently ignored files
+    list-ignored-files = !git ls-files -v | grep "^[[:lower:]]"
