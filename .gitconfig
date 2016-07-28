@@ -2,7 +2,9 @@
 	name = 
 	email = 
 [core]
-	editor = 'C:/Program Files (x86)/Microsoft VS Code/Code.exe'
+	#Common Windows Paths
+	#editor = 'C:/Program Files (x86)/Microsoft VS Code/Code.exe'
+	editor = 'C:/Program Files/Sublime Text 3/sublime_text.exe'
 [alias]
     #quick look at all repo
     loggsa = log --color --date-order --graph --oneline --decorate --simplify-by-decoration --all
